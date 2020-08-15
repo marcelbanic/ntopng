@@ -21,8 +21,7 @@ pipeline {
             steps{
                 ansiblePlaybook extras: "-e tag=${env.DOCKER_TAG}", 
                                 credentialsId: 'slave-one', 
-                                playbook: 'ansible/docker-deploy.yml',
-                                inventory: 'ansible/dev.inventory'
+                                playbook: 'ansible/docker-deploy.yml'
             }
         }
     }
