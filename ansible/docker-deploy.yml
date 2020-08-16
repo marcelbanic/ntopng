@@ -1,5 +1,5 @@
 
-- hosts: test-host
+- hosts: localhost
   remote_user: root
   become: True
   tasks:
