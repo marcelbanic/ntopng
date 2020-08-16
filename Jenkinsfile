@@ -13,7 +13,7 @@ pipeline {
             steps{
                 withCredentials([string(credentialsId: 'docker-hub', variable: 'dockerHubPwd')]) {
                     sh "docker login -u marcelbanic -p ${dockerHubPwd}"
-                    sh "docker push marcelbanic/ntopng:${DOCKER_TAG}"
+                    sh "docker push marcelbanic/ntopng-local:${DOCKER_TAG}"
                 }
             }
         }
