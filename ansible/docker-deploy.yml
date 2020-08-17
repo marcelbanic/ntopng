@@ -1,7 +1,5 @@
 
 - hosts: test-host
-  remote_user: root
-  become: True
   tasks:
     - name: install pip
       yum:
